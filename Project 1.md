@@ -14,3 +14,4 @@ From Menu m
 Join Sales s
 On m.product_id = s.product_id
 Group by S.customer_id
+````
