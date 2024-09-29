@@ -6,9 +6,9 @@
 
 ***
 
-#### 1. In your company there hasn't been a database table with all the employee information yet. You need to set up the table called employees in the following way:
+#### 1. In your company there hasn't been a database table with all the employee information yet. You need to set up the table called employees in the way shown bellow make sure there should be NOT NULL constraints for the following columns: first_name, last_name , job_position, start_date, birth_date:
 ![alt text](image.png)
-#### There should be NOT NULL constraints for the following columns: first_name, last_name , job_position, start_date, birth_date
+
 
 ````sql
 CREATE TABLE employees
