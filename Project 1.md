@@ -6,17 +6,23 @@
 
 ***
 
-#### 1. In your company there hasn't been a database table with all the employee information yet.
-####    You need to set up the table called employees in the following way:
+#### 1. In your company there hasn't been a database table with all the employee information yet. You need to set up the table called employees in the following way:
 ![alt text](image.png)
 
-#### There should be NOT NULL constraints for the following columns: first_name, last_name , job_position, start_date DATE,
-#### birth_date DATE
+#### There should be NOT NULL constraints for the following columns: first_name, last_name , job_position, start_date DATE, birth_date DATE
 
 ````sql
-Select S.customer_id, Sum(M.price) as Total_sales
-From Menu m
-Join Sales s
-On m.product_id = s.product_id
-Group by S.customer_id
+CREATE TABLE employees
+(
+    emp_id INTEGER, 
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    job_position VARCHAR(50),
+    salary DECIMAL(8,2),
+    start_date DATE,
+    birth_date DATE,
+    store_id INTEGER,
+    department_id INTEGER, 
+    manager_id INTEGER 
+)
 ````
