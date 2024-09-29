@@ -1,4 +1,4 @@
-# Case Study 1: Danny's Diner
+# 
 
 ## Solution
 
@@ -6,7 +6,15 @@
 
 ***
 
-### 1. What is the total amount each customer spent at the restaurant?
+### 1. In your company there hasn't been a database table with all the employee information yet.
+###    You need to set up the table called employees in the following way:
+![alt text](image.png)
+
+### There should be NOT NULL constraints for the following columns: first_name, last_name , job_position, start_date DATE,
+### birth_date DATE
+
+
+
 
 ````sql
 Select S.customer_id, Sum(M.price) as Total_sales
